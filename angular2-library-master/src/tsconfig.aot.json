@@ -13,7 +13,7 @@
     "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
-    "mapRoot": "",
+    //"mapRoot": "",
     "outDir": "./../dist",
     "skipLibCheck": true,
     "baseUrl": ""

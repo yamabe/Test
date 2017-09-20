@@ -5,11 +5,18 @@ import {HelloWorldComponent} from './HelloWorld.component';
  *
  * @author Daniele Zurico
  */
+//@NgModule({
+//    declarations: [HelloWorldComponent],
+//    exports: [HelloWorldComponent]
+//})
+export function declarations() {
+  return [
+    HelloWorldComponent
+  ];
+}
 @NgModule({
-    declarations: [HelloWorldComponent],
-    exports: [HelloWorldComponent]
-})
-
+    declarations: declarations(),
+  })
 export class HelloWorldModule {
     static forRoot(): ModuleWithProviders {
         return {ngModule: HelloWorldModule, providers: []};

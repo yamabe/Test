@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HelloWorldModule} from 'angular2-sdk/dist';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+    ,
+    HelloWorldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
